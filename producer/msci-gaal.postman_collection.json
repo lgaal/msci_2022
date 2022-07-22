@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "8898c914-57fa-4a8a-9f2f-a70567201480",
+		"name": "msci-gaal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send input messages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/send?messages=A1,A2,B2,D1,C1,D2,A3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"send"
+					],
+					"query": [
+						{
+							"key": "messages",
+							"value": "A1,A2,B2,D1,C1,D2,A3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reading the results queue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/results",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"results"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

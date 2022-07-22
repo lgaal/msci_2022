@@ -1,0 +1,6 @@
+server.port: 8081
+
+logging.level:
+  hu.gaal.msci: DEBUG
+
+spring.activemq.broker-url: tcp://localhost:61616
